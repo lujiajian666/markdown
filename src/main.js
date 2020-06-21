@@ -8,10 +8,12 @@ const contentPromise = axios({
   url: `${filePath}`
 })
 document.addEventListener('DOMContentLoaded',function(){
-  contentPromise.then(res => {
-    console.log(res);
-    document.getElementById('content').innerHTML = marked(res.data);
-  })
+  setTimeout(() => {
+    contentPromise.then(res => {
+      console.log(res);
+      document.getElementById('content').innerHTML = marked(res.data);
+    })
+  }, 1000)
 });
 
 

@@ -5,10 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>markdown解析</title>
   <link rel="stylesheet" href="css/index.css" type="text/css">
+  <style>
+    .ske-1 {
+      width: 50%;
+      height: 40px;
+      margin-top: 50px;
+      background-color: #e1dcdc;
+      transform-origin: left center;
+      animation: long 2s infinite;
+    }
+    .ske-2 {
+      width: 40%;
+      height: 40px;
+      margin-top: 20px;
+      background-color: #e1dcdc;
+      transform-origin: left center;
+      animation: long 1.5s infinite;
+    }
+    .ske-3 {
+      width: 60%;
+      height: 40px;
+      margin-top: 20px;
+      background-color: #e1dcdc;
+      transform-origin: left center;
+      animation: long 3s infinite;
+    }
+    @keyframes long {
+      0% { transform: scaleX(1); }
+      50% { transform: scaleX(1.5); }
+      100% { transform: scaleX(1); }
+    }
+  </style>
 </head>
 <body>
   <div id="content">
-    
+    <div class="ske-1"></div>
+    <div class="ske-2"></div>
+    <div class="ske-3"></div>
+
+    <div class="ske-1"></div>
+    <div class="ske-2"></div>
+    <div class="ske-3"></div>
+
+    <div class="ske-1"></div>
+    <div class="ske-2"></div>
+    <div class="ske-3"></div>
+
+    <div class="ske-1"></div>
+    <div class="ske-2"></div>
+    <div class="ske-3"></div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
