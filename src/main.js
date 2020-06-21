@@ -4,6 +4,9 @@ import axios from 'axios';
 const name = query.get('name');
 const filePath = BASE_URL + `${name}/${name}.md`;
 
+const base = document.createElement('base');
+base.href = `/html/markdown/${name}/`
+document.getElementsByTagName('head')[0].appendChild(base)
 const contentPromise = axios({
   url: `${filePath}`
 })
